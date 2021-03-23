@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WMTHemalPractical" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!--No Action Bar Theme-->
+    <style name="Theme.WMTHemalPractical.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Full Screen Theme-->
+    <style name="Theme.WMTHemalPractical.FullScreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--region Toolbar Theme-->
+    <style name="Theme.WMTHemalPractical.Toolbar" parent="ThemeOverlay.MaterialComponents.Dark">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/text_hint_color</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <!--endregion-->
+
+    <!--region For Setting Toolbar Menu Popup Background White-->
+    <style name="Theme.WMTHemalPractical.DarkToolbarStyle" parent="Theme.MaterialComponents.Light">
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+    <!--endregion-->
+
+    <!--region Used At Toolbar Title, Spinner TextView-->
+    <style name="ToolbarTextViewStyle" parent="TextAppearance.AppCompat.Small">
+        <!--<item name="android:fontFamily">@font/crimson_text</item>-->
+        <item name="android:padding">@dimen/padding_margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_body_2_regular</item>
+    </style>
+    <!--endregion-->
+
+    <!--region Text Input Edit Text Style-->
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColorHint">@color/purple_700</item>
+        <item name="hintTextAppearance">@style/TextLabel</item>
+
+        <item name="android:paddingStart">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingEnd">@dimen/activity_vertical_margin</item>
+
+        <item name="boxCornerRadiusBottomEnd">@dimen/round_corner_large</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusTopEnd">0dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/round_corner_large</item>
+
+        <item name="boxStrokeColor">@color/edit_text_box_border</item>
+        <item name="boxStrokeWidth">@dimen/_2mdp</item>
+
+        <item name="errorEnabled">true</item>
+
+        <item name="startIconTint">@color/purple_500</item>
+        <item name="passwordToggleTint">@color/purple_500</item>
+    </style>
+    <!--endregion-->
+
+    <!--Edit text style-->
+    <style name="TextInputEditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_body_2_regular</item>
+    </style>
+
+    <!--For Text Hint Size-->
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:textSize">@dimen/text_size_body_2_regular</item>
+    </style>
+
+    <!--region For Progress Dialog-->
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/purple_700</item>
+
+        <item name="android:textColorPrimary">@color/purple_700</item>
+        <item name="android:textSize">@dimen/text_size_body_2_regular</item>
+
+        <item name="android:background">@color/white</item>
+    </style>
+    <!--endregion-->
+</resources>

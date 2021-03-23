@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/purple_500"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/Theme.WMTHemalPractical.Toolbar"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp"
+    app:popupTheme="@style/Theme.WMTHemalPractical.DarkToolbarStyle">
+
+    <!--Title Text View-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        style="@style/ToolbarTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:padding="@dimen/padding_margin_small"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_body_3_regular"
+        tools:text="Title." />
+</com.google.android.material.appbar.MaterialToolbar>
